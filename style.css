@@ -1,0 +1,153 @@
+:root {
+    --bg: #0b0b0d;
+    --card: #151518;
+    --gold: #dfb15b;
+    --text: #ffffff;
+    --gray: #8e8e93;
+    --green: #34c759;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.crown {
+    font-size: 2.5rem;
+}
+
+header h1 {
+    color: var(--gold);
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+header p {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Ads Box Styling */
+.ad-box {
+    background: #1e1e24;
+    border: 1px dashed #444;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.ad-text {
+    font-size: 10px;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.mock-ad {
+    padding: 15px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* App Main Interface Card */
+.app-card {
+    background: var(--card);
+    border: 1px solid rgba(223, 177, 91, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.app-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(223, 177, 91, 0.15);
+    color: var(--gold);
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #d1d1d6;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid #2c2c2e;
+    border-bottom: 1px solid #2c2c2e;
+}
+
+.feat-item {
+    font-size: 0.85rem;
+    color: var(--green);
+    font-weight: bold;
+}
+
+.download-zone {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alert-text {
+    font-size: 0.85rem;
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+.download-btn {
+    display: block;
+    background: var(--gold);
+    color: #000;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(223, 177, 91, 0.3);
+    transition: transform 0.2s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    background: #f0c26a;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.75rem;
+    color: var(--gray);
+}
